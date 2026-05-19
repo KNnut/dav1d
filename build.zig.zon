@@ -1,0 +1,23 @@
+.{
+    .name = .dav1d,
+    .version = "1.5.3",
+    .fingerprint = 0xf5f400e703718384,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .dav1d = .{
+            .url = "git+https://code.videolan.org/videolan/dav1d?ref=1.5.3#b546257f770768b2c88258c533da38b91a06f737",
+            .hash = "N-V-__8AAGPEswDhJviIdrQMQphpqvzV4vajBe-y2sZviPZl",
+        },
+        .nasm = .{
+            .url = "git+https://github.com/allyourcodebase/nasm#d7356eadb2d7771542fe74e8fc0668bd78732b59",
+            .hash = "nasm-3.0.1-B_NnpQpTAAA25UxvqONakXtmj-a78PGe3xfgyDFgetb0",
+            .lazy = true,
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
